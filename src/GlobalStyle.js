@@ -6,6 +6,15 @@ const GlobalStyle = createGlobalStyle`
    License: none (public domain)
 */
 
+:root{
+    --black-color: rgba(0, 0, 0, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --gray-color: rgba(221, 221, 221, 1);
+    --blue-color: rgba(118, 149, 236, 1);
+    --green-color: rgba(71, 185, 96, 1);
+    --orange-color: rgba(255, 81, 81, 1);
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--gray-color);
 }
 ol, ul {
 	list-style: none;
@@ -55,14 +65,7 @@ table {
     box-sizing: border-box;
 }
 
-:root{
-    --black-color: rgba(0, 0, 0, 1);
-    --white-color: rgba(255, 255, 255, 1);
-    --beige-color: rgba(221, 221, 221, 1);
-    --blue-color: rgba(118, 149, 236, 1);
-    --green-color: rgba(71, 185, 96, 1);
-    --orange-color: rgba(255, 81, 81, 1);
-}
+
 
 h1 {
     font-size: 22px;
@@ -75,6 +78,7 @@ h2, p {
 h3 {
     font-size: 16px;
     font-weight: 700;
+    line-height: 18.75px;
 }
 h4 {
     font-size: 18px;
@@ -88,6 +92,6 @@ h6 {
     font-size: 14px;
     font-weight: 400;
 }
-`
+`;
 
 export default GlobalStyle;
